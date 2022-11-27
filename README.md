@@ -1,3 +1,3 @@
 # Kokoa Clone 2022
 
-CSS got so much better!
+Happy to learn HTML and CSS!
