@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+@import "reset.css"; /* 브라우저 스타일을 없애고 유저가 직접 디자인하기 위해 reset해주는 파일 */
+@import "variables.css";
+
+/* Components */
+@import "components/status-bar.css";
+@import "components/nav-bar.css";
+@import "components/screen-header.css";
+@import "components/alt-screen-header.css";
+@import "components/user-component.css";
+@import "components/badge.css";
+@import "components/icon-row.css";
+@import "components/no-mobile.css";
+/* Screens */
+@import "screens/login.css";
+@import "screens/friends.css";
+@import "screens/find.css";
+@import "screens/more.css";
+@import "screens/settings.css";
+@import "screens/chat.css";
+
+/* styles에는 모든 스크린에 적용될 수 있는 스타일만 넣기를 권장함 */
+body {
+    color: #2e363e;
+    font-family: 'Open Sans', sans-serif;
+    /* height: 1000vh; */
+} /* font: fonts.google.com 추천 */
+
+.main-screen {
+    padding: 0px var(--horizontal-space);
+}

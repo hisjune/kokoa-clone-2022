@@ -1,0 +1,64 @@
+#friends-display-link {
+    text-align: center;
+    display: block;
+    background-color: #fafafa;
+    padding: 15px 0px;
+    font-size: 18px;
+    margin-bottom: 15px;
+    margin-top: -10px;
+}
+
+#friends-display-link i{
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.friends-screen {
+    padding: 0px var(--horizontal-space); 
+}
+
+
+.friends-screen__channel {
+    margin-top: 25px;
+    border-top: var(--main-border);
+    padding-top: 15px;
+}
+
+.friends-screen__channel-header {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+@keyframes hideSplashScreen {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+    /* animation이 끝나면 default값인 opacity: 1로 돌아감 
+        animation 속성 중 forwards 를 추가하면 마지막 특성값을 유지함
+        그러나 마지막 특성값을 유지함에 따라서 그 페이지가 그대로 위에 덮혀있음
+        visibility:hidden을 통하여 클릭은 가능하게 만들 수 있음
+        다만, 코드를 아예 지워야 한다면 JS가 필요함 */
+}
+
+#splash-screen {
+    background-color: var(--yellow);
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top:0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 128px;
+
+    animation: hideSplashScreen 0.5s ease-in-out forwards; 
+    animation-delay: 1s; /* animation이 멈춰서 머무는 시간*/
+    /* animation이 시작하기 전 멈춰있는 시간을
+		animation-delay 속성을 부여하여 구현할 수 있다. */
+}
